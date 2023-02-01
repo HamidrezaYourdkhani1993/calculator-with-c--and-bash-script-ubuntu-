@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2;
+    char op;
+
+    cout &#8203;`oaicite:{"index":0,"invalid_reason":"Malformed citation << \"Enter the first number: \";\n    cin >>"}`&#8203; num1;
+    cout &#8203;`oaicite:{"index":1,"invalid_reason":"Malformed citation << \"Enter the second number: \";\n    cin >>"}`&#8203; num2;
+    cout &#8203;`oaicite:{"index":2,"invalid_reason":"Malformed citation << \"Enter the operation (+, -, *, /): \";\n    cin >>"}`&#8203; op;
+
+    switch (op) {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << num1 + num2;
+            break;
+        case '-':
+            cout << num1 << " - " << num2 << " = " << num1 - num2;
+            break;
+        case '*':
+            cout << num1 << " * " << num2 << " = " << num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                cout << num1 << " / " << num2 << " = " << num1 / num2;
+            } else {
+                cout << "Cannot divide by zero";
+            }
+            break;
+        default:
+            cout << "Invalid operator";
+            break;
+    }
+
+    return 0;
+}
